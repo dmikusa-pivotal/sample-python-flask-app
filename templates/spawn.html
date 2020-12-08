@@ -3,9 +3,7 @@
 {% block body %}
     {{ super() }}
     <h1>Command Output</h1>
-    <pre>
-{% for line in output %}
+    <pre>{% for line in output -%}
 {{ line }}
-{% endfor %}
-    </pre>
+{% endfor -%}</pre>
 {% endblock %}
