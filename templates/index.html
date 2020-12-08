@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}Bootstrap 101 Template{% endblock %}
+{% block body %}
+    {{ super() }}
+    <h1>Hello, world!</h1>
+    <p>Running Python {{ vi.major }}.{{ vi.minor }}.{{ vi.micro }} Release {{ vi.releaselevel }}</p>
+    <h2>Links</h2>
+    <ul>
+        <li><a href="/env">Dump Environment</a></li>
+        <li><a href="/spawn">Spawn a process & see output</a></li>
+        <li><a href="/longlog">Write a very long log message</a></li>
+        <li><a href="/sleep?time=2">Sleep for two seconds</a></li>
+        <li><a href="/exit">Crash the app</a></li>
+    </ul>
+{% endblock %}
