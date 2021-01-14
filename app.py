@@ -24,6 +24,10 @@ def env():
     # dump all env variables
     return render_template("env.html", env=os.environ)
 
+@app.route('/headers')
+def request_headers():
+    # dump all request headers
+    return render_template("headers.html", headers=request.headers)
 
 @app.route('/spawn')
 def spawn(shell=False):
